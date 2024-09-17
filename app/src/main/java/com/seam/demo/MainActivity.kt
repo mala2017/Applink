@@ -18,29 +18,19 @@ class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val appLinkData: Uri? = intent.data
+
         setContent {
             ComposeExperimentsTheme {
 
-                OpenWebPageExample()
+                // OpenWebPageExample()
             }
         }
+        // ATTENTION: This was auto-generated to handle app links.
+        val appLinkIntent: Intent = intent
+        val appLinkAction: String? = appLinkIntent.action
+        val appLinkData: Uri? = appLinkIntent.data
     }
-    override fun onNewIntent(intent: Intent) {
-        super.onNewIntent(intent)
-        handleIntent(intent)
-    }
-    private fun handleIntent(intent: Intent) {
-        val appLinkAction = intent.action
-        val appLinkData: Uri? = intent.data
-        if (Intent.ACTION_VIEW == appLinkAction) {
-            val authCode = appLinkData?.getQueryParameter("code")
-            if(!authCode.isNullOrEmpty()){
-                //viewModel.enableAlexaSkill(authCode)
-            }else{
-                finish()
-            }
-        }
-    }
+
+
 }
 
