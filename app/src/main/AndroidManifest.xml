@@ -32,8 +32,10 @@
                 <!-- Define the deep link URL pattern here -->
                 <data
                     android:scheme="https"
-                    android:host="www.example.com"
-                    android:pathPrefix="/deepLink" />
+                    android:host="mala2017.github.io"
+                    android:path="/.well-known/assetlinks.json"/>
+
+
             </intent-filter>
         </activity>
     </application>

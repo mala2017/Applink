@@ -7,6 +7,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.viewModels
 import com.seam.demo.seam.MainScreen
+import com.seam.demo.seam.OpenWebPageExample
 import com.seam.demo.seam.WorkspaceViewModel
 import com.seam.demo.ui.theme.ComposeExperimentsTheme
 
@@ -21,7 +22,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             ComposeExperimentsTheme {
 
-                //OpenWebPageExample()
+                OpenWebPageExample()
             }
         }
     }
