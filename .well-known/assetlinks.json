@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.seam.demo",
+    "sha256_cert_fingerprints":
+    ["F7:B1:34:64:F1:01:9A:0F:19:AC:DB:10:94:32:74:14:E9:8A:87:0A:21:25:DF:6C:87:9C:E1:FE:A8:98:94:CA"]
+  }
+}]

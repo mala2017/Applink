@@ -22,7 +22,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             ComposeExperimentsTheme {
 
-                // OpenWebPageExample()
+                 OpenWebPageExample()
             }
         }
         // ATTENTION: This was auto-generated to handle app links.
